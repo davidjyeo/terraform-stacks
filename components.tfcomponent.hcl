@@ -1,6 +1,5 @@
-
 component "access-control" {
-  source = "./src/terraform/access-control"
+  source = "/src/terraform/access-control"
 
   inputs = {
     application_name = var.application_name
@@ -12,9 +11,8 @@ component "access-control" {
   }
 }
 
-
 component "shared" {
-  source = "./src/terraform/shared"
+  source = "/src/terraform/shared"
 
   inputs = {
     location         = var.primary_location

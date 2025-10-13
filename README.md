@@ -44,6 +44,9 @@ Finally, update the `subscription_id` for both the `dev` and `prod` deployment b
 
 ### STEP 3: Run `terraform stacks init`
 
+terraform login
+terraform stacks init
+
 You'll need to ensure you have the Terraform Stacks beta installed otherwise the command `terraform stacks init` will not be recognized. I highly recommend installing `tfenv` so you can install and switch between different terraform versions.
 
 ### STEP 4: Commit to main and go watch Terraform Cloud work!!!
