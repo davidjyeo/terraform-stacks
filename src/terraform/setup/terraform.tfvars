@@ -1,0 +1,5 @@
+organization      = "contoso"
+application_name  = "product1"
+service_name      = "devops"
+dev_subscription  = "00000000-0000-0000-0000-000000000000"
+prod_subscription = "00000000-0000-0000-0000-000000000000"
