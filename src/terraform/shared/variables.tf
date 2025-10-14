@@ -18,10 +18,10 @@ variable "tags" {
   type        = map(string)
 }
 
-variable "groups" {
-  type = object({
-    level1 = string
-    level2 = string
-    level3 = string
-  })
-}
+# variable "groups" {
+#   type = object({
+#     level1 = string
+#     level2 = string
+#     level3 = string
+#   })
+# }
