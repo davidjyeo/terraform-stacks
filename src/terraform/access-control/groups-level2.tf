@@ -1,6 +1,6 @@
 
 data "azuread_users" "level2" {
-  user_principal_names = ["mark@contoso.com"]
+  user_principal_names = ["user@domain.io"]
 }
 
 locals {
