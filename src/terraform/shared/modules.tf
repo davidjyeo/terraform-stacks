@@ -1,6 +1,6 @@
 module "naming" {
   source = "Azure/naming/azurerm"
-  prefix = [
+  suffix = [
     "${var.application_name}-${var.environment_name}-shared"
   ]
 }
