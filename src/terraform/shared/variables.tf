@@ -25,3 +25,27 @@ variable "tags" {
 #     level3 = string
 #   })
 # }
+
+variable "enable_telemetry" {
+  type        = bool
+  description = "Enable telemetry for the module"
+  default     = false
+}
+
+variable "main_cidr_addr" {
+  description = "CIDR address space for the virtual network"
+  type        = string
+  default     = "10.0.0.0/26"
+}
+
+variable "main_address_prefixes_ordered" {
+  type        = map(number)
+  description = "The size of the subnets"
+  default = {
+    "a" = 28
+    "b" = 27
+    # "c" = 27
+    # "d" = 27
+    # "e" = 27
+  }
+}
