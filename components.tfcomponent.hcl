@@ -19,7 +19,7 @@ component "shared" {
     application_name = var.application_name
     environment_name = var.environment_name
     tags             = var.tags
-    groups           = component.access-control.groups
+    # groups           = component.access-control.groups
   }
 
   providers = {
