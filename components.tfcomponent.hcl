@@ -1,15 +1,15 @@
-# component "access-control" {
-#   source = "./src/terraform/access-control"
+component "access-control" {
+  source = "./src/terraform/access-control"
 
-#   inputs = {
-#     application_name = var.application_name
-#     environment_name = var.environment_name
-#   }
+  inputs = {
+    application_name = var.application_name
+    environment_name = var.environment_name
+  }
 
-#   providers = {
-#     azuread = provider.azuread.this
-#   }
-# }
+  providers = {
+    azuread = provider.azuread.this
+  }
+}
 
 component "shared" {
   source = "./src/terraform/shared"
@@ -19,7 +19,7 @@ component "shared" {
     application_name = var.application_name
     environment_name = var.environment_name
     tags             = var.tags
-    # groups           = component.access-control.groups
+    groups           = component.access-control.groups
   }
 
   providers = {
