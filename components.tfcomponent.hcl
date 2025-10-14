@@ -24,6 +24,7 @@ component "shared" {
 
   providers = {
     azurerm = provider.azurerm.this
+    azapi   = provider.azapi.this
     random  = provider.random.this
   }
 }

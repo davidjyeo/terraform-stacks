@@ -11,6 +11,9 @@ required_providers {
     source  = "hashicorp/azuread"
     version = "~> 3.5.0"
   }
+  # azapi = {
+
+  # }
 }
 
 provider "azurerm" "this" {
@@ -36,3 +39,5 @@ provider "azuread" "this" {
 }
 
 provider "random" "this" {}
+
+provider "azapi" "this" {}

@@ -32,13 +32,13 @@ variable "enable_telemetry" {
   default     = false
 }
 
-variable "main_cidr_addr" {
+variable "cidr_addr" {
   description = "CIDR address space for the virtual network"
   type        = string
   default     = "10.0.0.0/26"
 }
 
-variable "main_address_prefixes_ordered" {
+variable "address_prefixes_ordered" {
   type        = map(number)
   description = "The size of the subnets"
   default = {
