@@ -3,7 +3,7 @@ identity_token "azurerm" {
 }
 
 locals {
-  client_id        = "f09f4e30-a627-4d9b-b3ae-0837a51247d8"
+  client_id        = "c95e4a8d-9783-45c1-931a-90b0912e084f"
   tenant_id        = "88ef261e-b19b-4d71-9afd-cdac31a6dcda"
   primary_location = "uksouth"
   application_name = "davidjyeo-application-service"
