@@ -36,5 +36,5 @@ provider "azuread" "this" {
 }
 
 provider "random" "this" {}
-provider "azapi" "this" {}
-provider "modtm" "this" {}
+# provider "azapi" "this" {}
+# provider "modtm" "this" {}
