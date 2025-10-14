@@ -11,16 +11,16 @@ module "avm-res-network-virtualnetwork" {
   name             = "${module.naming.virtual_network.name}-01"
   enable_telemetry = var.enable_telemetry
 
-  subnets = {
-    subnet0 = {
-      name                            = "${module.naming.subnet.name}-01"
-      default_outbound_access_enabled = true
-      address_prefixes                = [module.avm-utl-network-ip-addresses.address_prefixes["a"]]
-    }
-    subnet1 = {
-      name                            = "AzureBastionSubnet"
-      default_outbound_access_enabled = true
-      address_prefixes                = [module.avm-utl-network-ip-addresses.address_prefixes["b"]]
-    }
-  }
+  # subnets = {
+  #   subnet0 = {
+  #     name                            = "${module.naming.subnet.name}-01"
+  #     default_outbound_access_enabled = true
+  #     address_prefixes                = [module.avm-utl-network-ip-addresses.address_prefixes["a"]]
+  #   }
+  #   subnet1 = {
+  #     name                            = "AzureBastionSubnet"
+  #     default_outbound_access_enabled = true
+  #     address_prefixes                = [module.avm-utl-network-ip-addresses.address_prefixes["b"]]
+  #   }
+  # }
 }
