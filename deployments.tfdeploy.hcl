@@ -15,7 +15,7 @@ deployment "dev" {
     identity_token   = identity_token.azurerm.jwt
     client_id        = local.client_id
     tenant_id        = local.tenant_id
-    location         = local.secondary_location
+    primary_location = local.secondary_location
     application_name = local.application_name
     subscription_id  = ""
     environment_name = "dev"
@@ -32,7 +32,7 @@ deployment "prod" {
     identity_token   = identity_token.azurerm.jwt
     client_id        = local.client_id
     tenant_id        = local.tenant_id
-    location         = local.primary_location
+    primary_location = local.primary_location
     application_name = local.application_name
     subscription_id  = ""
     environment_name = "prod"
