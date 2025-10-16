@@ -11,10 +11,10 @@ required_providers {
     source  = "hashicorp/azuread"
     version = "> 3.5.0"
   }
-  azapi = {
-    source  = "Azure/azapi"
-    version = "> 2.5.0"
-  }
+  # azapi = {
+  #   source  = "Azure/azapi"
+  #   version = "> 2.5.0"
+  # }
 }
 
 provider "azurerm" "this" {
@@ -38,5 +38,5 @@ provider "azuread" "this" {
 }
 
 provider "random" "this" {}
-provider "azapi" "this" {}
+# provider "azapi" "this" {}
 # provider "modtm" "this" {}
